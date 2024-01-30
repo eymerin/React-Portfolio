@@ -27,7 +27,7 @@
 .dektopMenuBtn {
     background: white;
     color: black;  
-    border:none;
+    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,4 +37,5 @@
     object-fit: cover;
     height: 1rem;
     width: 1rem;
+    margin: 1rem;
 }
