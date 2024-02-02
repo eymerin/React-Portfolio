@@ -7,14 +7,17 @@ import Database from '../../assets/database.png';
 const Skills = () => {
     return (
         <section id='skills'>
-            <span className='skillTitle'>What I do</span>
-            <span className='skillDescription'>Description of skills and known technologies.</span>
+            <span className='skillTitle'>Skills</span>
+            <span className='skillDescription'>I have had the opportunity to work with a wide range of technologies of the past few years. 
+            After getting my Bachelor's Degree in Game Design I added to it a Full Stack Development Certificate. 
+            My passion is designing beautiful, responsive, and engaging experiences for users.
+            </span>
             <div className='skillBars'>
                 <div className='skillBar'>
                     <img src={WebDesign} alt='WebDesign' className='skillBarImg'/>
                     <div className='skillBarText'>
                         <h2>Web Design</h2>
-                        <p>I am an experienced designer with an eye for detail and a passion for clean, easy-to-use interfaces.</p>
+                        <p>I am an experienced designer with an eye for detail and a passion for clean, easy-to-use interfaces. HTML, CSS, Javascript, React, Bootstrap, Tailwind, and the Adobe Suite are my main tools for this.</p>
                     </div>
                 </div>
                 <div className='skillBar'>

@@ -93,3 +93,23 @@
         height: 100vh;
     }
 }
+
+@media screen and (max-width:551px){
+    .introContent {
+        font-size: 10vw;
+    }
+    .hello {
+        font-size: 4.5vw;
+        top: 1rem;
+    }
+    .introParagraph {
+        font-size: 3.5vw;
+        white-space: normal;
+    }
+    .bg {
+        right: -9rem;
+        z-index: -1;
+        object-fit: cover;
+        height: 100vh;
+    }
+}
