@@ -1,0 +1,95 @@
+#intro {
+    height: calc(100vh - 5rem);
+    width: 100 vw;
+    max-width: 80rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg {
+    position:absolute;
+    top: 0rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.introContent {
+    height: 100vh;
+    width: 100vh;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.introText {
+    margin-top: 0.75rem;
+}
+
+.introName {
+    color: #01C38D;
+}
+
+.introParagraph {
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-top: 0.75rem;
+    white-space: pre-line;
+}
+
+.btn {
+    background: #132D46;
+    margin: 1rem 0;
+    padding: 0.5rem 1.5rem;
+    border-color: #961c8b;
+    border-width: 6px;
+    color: #01C38D;
+    border-radius: 3rem;
+    font-size: 2rem;
+    font-weight:600;
+    text-align: center;
+}
+
+.btn:hover {
+    border-color: #bf71b9;
+}
+
+.btnImg {
+    object-fit: cover;
+    margin: 0 0.5rem;
+    height: 1.5rem;
+}
+
+.btn:hover {
+    background: #961c8b;
+}
+
+@media screen and (max-width:666px){
+    .introContent {
+        font-size: 10vw;
+    }
+    .hello {
+        font-size: 4.5vw;
+        top: 1rem;
+    }
+    .introParagraph {
+        font-size: 3.5vw;
+        white-space: normal;
+    }
+    .bg {
+        right: -3rem;
+        z-index: -1;
+        object-fit: cover;
+        height: 100vh;
+    }
+}

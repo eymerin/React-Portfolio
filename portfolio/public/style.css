@@ -4,10 +4,13 @@
     box-sizing: border-box;
     text-decoration: none;
     background: transparent;
+    font-family: 'Barlow', sans-serif;
 }
 
 body {
-    background: rgb(50, 50, 50);
+    background-image: linear-gradient(to right, #0d2337, #143049, #0d2337);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
     overflow: hidden;
     overflow-y: scroll;
