@@ -1,7 +1,7 @@
 #intro {
     height: calc(100vh - 5rem);
     width: 100 vw;
-    max-width: 80rem;
+    max-width: 80vw;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -18,7 +18,7 @@
 
 .introContent {
     height: 100vh;
-    width: 100vh;
+    width: 80vw;
     padding: 2rem;
     font-size: 3rem;
     font-weight: 700;
@@ -45,6 +45,7 @@
     font-weight: 200;
     margin-top: 0.75rem;
     white-space: pre-line;
+    width: 36vw;
 }
 
 .btn {
@@ -74,32 +75,33 @@
     background: #961c8b;
 }
 
-@media screen and (max-width:666px){
-    .introContent {
-        font-size: 10vw;
-    }
-    .hello {
-        font-size: 4.5vw;
-        top: 1rem;
-    }
-    .introParagraph {
-        font-size: 3.5vw;
-        white-space: normal;
-    }
+@media screen and (max-width:753px){
     .bg {
-        right: -3rem;
-        z-index: -1;
-        object-fit: cover;
-        height: 100vh;
+        right: -4rem;
+        width: 90vw;
+        overflow: visible;
+    }
+
+    .introParagraph {
+        width: auto;
     }
 }
 
-@media screen and (max-width:551px){
+@media screen and (max-width:666px){
+    #intro {
+        height: calc(100vh - 5rem);
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    
     .introContent {
-        font-size: 10vw;
+        margin-top: rem;
+        height:100vh;
     }
     .hello {
-        font-size: 4.5vw;
         top: 1rem;
     }
     .introParagraph {
@@ -107,9 +109,13 @@
         white-space: normal;
     }
     .bg {
-        right: -9rem;
-        z-index: -1;
+        right: -5rem;
         object-fit: cover;
         height: 100vh;
+        width: 90vw;
+        position:absolute;
+        justify-self: center;
     }
 }
+
+

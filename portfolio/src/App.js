@@ -1,8 +1,9 @@
 // import logo from './logo.svg';
-//import './App.css';
+import './App.css';
 import Navbar from './components/navbar/navbar';
 import Intro from './components/intro/intro';
 import Skills from './components/skills/skills';
+import Projects from './components/projects/projects'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Intro />
       <Skills />
+      <Projects />
     </div>
   );
 }

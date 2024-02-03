@@ -1,7 +1,7 @@
 #skills {
     overflow: hidden;
     width: 100vw;
-    max-width: 70rem;
+    max-width: 80rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,14 +20,13 @@
 .skillDescription {
     font-weight: 300;
     font-size: 1.5rem;
-    max-width: 55rem;
+    max-width: 80vw;
     padding: 0 2rem;
 }
 
 .skillBars {
     margin: 1.5rem;
-    width: 100vw;
-    max-width: 90%;
+    max-width: 80vw;
     text-align: left;
 }
 
@@ -49,4 +48,16 @@
 .skillBarText>p {
     font-size: 1.25rem;
     font-weight: 200;
+}
+
+@media screen and (max-width:753px) {
+
+    .skillBar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skillBarImg {
+        margin: .25rem;
+    }
 }
