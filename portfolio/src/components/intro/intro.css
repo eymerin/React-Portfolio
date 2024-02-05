@@ -49,7 +49,7 @@
 }
 
 .btn {
-    background: #132D46;
+    background: transparent;
     margin: 1rem 0;
     padding: 0.5rem 1.5rem;
     border-color: #961c8b;
@@ -61,10 +61,6 @@
     text-align: center;
 }
 
-.btn:hover {
-    border-color: #bf71b9;
-}
-
 .btnImg {
     object-fit: cover;
     margin: 0 0.5rem;
@@ -73,6 +69,7 @@
 
 .btn:hover {
     background: #961c8b;
+    border-color: #bf71b9;
 }
 
 @media screen and (max-width:753px){

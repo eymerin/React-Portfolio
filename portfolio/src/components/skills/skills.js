@@ -6,11 +6,11 @@ import Database from '../../assets/database.png';
 
 const Skills = () => {
     return (
-        <section id='skills'>
+        <div id='skills'>
             <span className='skillTitle'>Skills</span>
-            <span className='skillDescription'>I have had the opportunity to work with a wide range of technologies of the past few years. 
+            <span className='skillDescription'>I have had the opportunity to work with a wide range of technologies over the past few years. 
             After getting my Bachelor's Degree in Game Design I added to it a Full Stack Development Certificate. 
-            My passion is designing beautiful, responsive, and engaging experiences for users.
+            My passion is designing beautiful, responsive, and engaging user experiences.
             </span>
             <div className='skillBars'>
                 <div className='skillBar'>
@@ -31,11 +31,11 @@ const Skills = () => {
                     <img src={AppDesign} alt='AppDesign' className='skillBarImg'/>
                     <div className='skillBarText'>
                         <h2>App Development</h2>
-                        <p>even more text than that</p>
+                        <p>I love developing web and mobile apps. I am most comfortable in the MongoDB, Express, React, and Node stack.</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
 

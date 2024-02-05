@@ -1,0 +1,18 @@
+#footer {
+    width: 100vw;
+    height: 4rem;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link {
+    object-fit: cover;
+    height: 3rem;
+    margin: 1.5rem;
+}

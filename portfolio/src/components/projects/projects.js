@@ -11,7 +11,7 @@ import ProjectPic8 from '../../assets/projectPic-8.png'
 
 const Projects = () => {
     return (
-        <section id='projects'>
+        <div id='projects'>
             <h2 className="projectsTitle">My Projects</h2>
             <span className="projectsDescription">Below are a few of my projects ranging from simple HTML pages to progressive web applications using the MERN stack and everywhere in between. Project files for these and many more can be found on my Github.</span>
             <div className="projectsImgs">
@@ -24,7 +24,7 @@ const Projects = () => {
                 <img src={ProjectPic7} alt="" className="projectsImg"/>
                 <img src={ProjectPic8} alt="" className="projectsImg"/>
             </div>
-        </section>
+        </div>
     )
 }
 

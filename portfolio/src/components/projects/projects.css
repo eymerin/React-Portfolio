@@ -38,24 +38,25 @@
 .projectsImg {
     object-fit: cover;
     height: 27rem;
+    max-width: 80%;
     margin: 0.5rem;
     flex-basis: calc(50% - 1rem);
     box-sizing: border-box;
     border-radius: 1rem;
 }
 
-@media screen and (max-width:1174) {
+@media screen and (max-width:1184px) {
     .projectsImgs {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        max-width: 75rem;
+        max-width: 70rem;
     }
     
     .projectsImg {
         object-fit: cover;
-        height: 16rem;
-        width: 24rem;
+        height: 60%;
+        width: 80%;
         margin: 0.5rem;
         flex-basis: calc(50% - 1rem);
         box-sizing: border-box;
