@@ -37,7 +37,7 @@
 
 .projectItem {
     position: relative;
-    margin: 0.5rem;
+    margin: .5rem;
     flex-basis: calc(50% - 1rem);
     display: flex;
     justify-content: center;

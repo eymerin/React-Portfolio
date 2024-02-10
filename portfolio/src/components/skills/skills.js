@@ -12,11 +12,11 @@ const Skills = () => {
             After getting my Bachelor's Degree in Game Design I added to it a Full Stack Development Certificate. 
             My passion is designing beautiful, responsive, and engaging user experiences.
             </span>
-            {/* Resume Download Link */}
+            <br/>
             <div className='resumeDownload'>
-                <a href="../../../public/files/Garrett_Young_Resume.docx" download="YourName_Resume.pdf" className="downloadResumeButton">
-                    Download My Resume
-                </a>
+            <a href={`${process.env.PUBLIC_URL}/files/Garrett_Young_Resume.pdf`} download="Garrett_Young_Resume.pdf" className="downloadResume">
+                - Download My Resume -
+            </a>
             </div>
             <div className='skillBars'>
                 <div className='skillBar'>
