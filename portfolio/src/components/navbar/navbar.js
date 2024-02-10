@@ -1,22 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './navbar.css';
 import logo from '../../assets/logo.png';
-import { Link } from 'react-scroll';
-import { Link as RouterLink } from 'react-router-dom'; // Import Link from react-router-dom
+import { NavLink as RouterLink } from 'react-router-dom';
 
 const Navbar = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    const closeMenu = () => {
+        setIsMenuOpen(false); // This will be called when any link is clicked
+    };
+
     return (
         <nav className="navbar">
-            <img src={logo} alt="logo" className="logo"/>
-            <div className="desktopMenu">
-                <Link to="intro" smooth={true} className="desktopMenuListItem">Home</Link>
-                <RouterLink to="/about" className="desktopMenuListItem">About</RouterLink>
-                <RouterLink to="/portfolio" className="desktopMenuListItem">Portfolio</RouterLink>
-                <RouterLink to="/contact" className="desktopMenuListItem">Contact</RouterLink>
+            <img src={logo} alt="logo" className="logo" onClick={toggleMenu} />
+
+            <div className={`desktopMenu ${isMenuOpen ? 'open' : ''}`}>
+                <RouterLink to="/" className="desktopMenuListItem" activeClassName="active" onClick={closeMenu}>Home</RouterLink>
+                <RouterLink to="/about" className="desktopMenuListItem" activeClassName="active" onClick={closeMenu}>About</RouterLink>
+                <RouterLink to="/resume" className="desktopMenuListItem" activeClassName="active" onClick={closeMenu}>Resume</RouterLink>
+                <RouterLink to="/portfolio" className="desktopMenuListItem" activeClassName="active" onClick={closeMenu}>Portfolio</RouterLink>
+                <RouterLink to="/contact" className="desktopMenuListItem" activeClassName="active" onClick={closeMenu}>Contact</RouterLink>
             </div>
-            <br/>
         </nav>
-    )
-}
+    );
+};
 
 export default Navbar;
+

@@ -1,5 +1,5 @@
 #footer {
-    width: 100vw;
+    width: 99vw;
     height: 4rem;
     background: transparent;
     align-items: center;
@@ -9,6 +9,8 @@
 .links {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .link {

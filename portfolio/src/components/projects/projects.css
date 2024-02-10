@@ -35,14 +35,34 @@
     margin: 1.5rem;
 }
 
+.projectItem {
+    position: relative;
+    margin: 0.5rem;
+    flex-basis: calc(50% - 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensure labels do not overflow the image container */
+    border-radius: 1rem; /* Optional: to match image border-radius */
+}
+
 .projectsImg {
     object-fit: cover;
     height: 27rem;
-    max-width: 80%;
-    margin: 0.5rem;
-    flex-basis: calc(50% - 1rem);
-    box-sizing: border-box;
+    width: 100%;
     border-radius: 1rem;
+}
+
+.projectLabel {
+    position: absolute;
+    color: white; /* Your specified color */
+    font-size: 1.5rem; /* Adjust as needed */
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    bottom: 0; /* Position at the bottom or center as preferred */
+    background-color: #961c8b; /* Optional: background to enhance readability */
+    padding: 0.5rem 0; /* Adjust padding for better appearance */
 }
 
 @media screen and (max-width:1184px) {
@@ -54,13 +74,21 @@
     }
     
     .projectsImg {
-        object-fit: cover;
         height: 60%;
         width: 80%;
-        margin: 0.5rem;
         flex-basis: calc(50% - 1rem);
-        box-sizing: border-box;
         border-radius: 1rem;
-        justify-content: center;
+    }
+    
+    .projectItem {
+        height: 60%;
+        width: 80%;
+        flex-basis: calc(50% - 1rem);
+        border-radius: 1rem;
+    }
+    .projectLabel {
+        width: 80%;
+        flex-basis: calc(50% - 1rem);
+        border-radius: 0 0 1rem 1rem;
     }
 }
